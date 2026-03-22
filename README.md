@@ -1,28 +1,35 @@
 # 💳 Credit Card Fraud Detection System
 
-A machine learning-based web application to detect fraudulent credit card transactions in real time using predictive analytics and data-driven modeling.
+A Machine Learning-powered web application that detects fraudulent credit card transactions in real-time using predictive analytics and an interactive dashboard.
+
+---
+
+## 🌐 Live Demo
+
+👉 https://credit-card-fraud-detection-projectapp.streamlit.app/
 
 ---
 
 ## 🚀 Project Overview
 
-This project focuses on identifying fraudulent transactions using supervised machine learning techniques. It handles highly imbalanced data and provides an interactive interface for prediction and dataset exploration.
+This project aims to identify fraudulent transactions from highly imbalanced financial data using machine learning techniques. It includes an end-to-end pipeline — from data preprocessing and model training to deployment via a web interface.
 
 ---
 
 ## 🧠 Key Features
 
 - 🔍 Real-time fraud prediction
-- 📊 Interactive data exploration dashboard
+- 📊 Interactive dataset exploration
+- 📈 Fraud probability visualization
 - ⚖️ Handles class imbalance using SMOTE
-- 📈 Displays fraud probability for each transaction
-- ⚡ Fast and lightweight deployment using Streamlit
+- 🔎 Feature importance insights
+- ⚡ Fast and lightweight Streamlit deployment
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Programming Language:** Python
+- **Language:** Python
 - **Libraries:** pandas, numpy, scikit-learn, imbalanced-learn, joblib
 - **Visualization:** matplotlib, seaborn, plotly
 - **Frontend:** Streamlit
@@ -33,7 +40,7 @@ This project focuses on identifying fraudulent transactions using supervised mac
 ## 📂 Project Structure
 
 ```
-CreditCard_Fraud_Detection/
+credit-card-fraud-detection/
 │
 ├── app.py                  # Streamlit web app
 ├── requirements.txt        # Dependencies
@@ -55,11 +62,12 @@ CreditCard_Fraud_Detection/
 
 ## ⚙️ How It Works
 
-1. Data is preprocessed and scaled using StandardScaler
-2. SMOTE is applied to balance the dataset
-3. Logistic Regression model is trained
-4. Model predicts fraud probability for new transactions
-5. Streamlit app provides an interactive interface
+1. Data is loaded from an online dataset
+2. Features are scaled using StandardScaler
+3. SMOTE is applied to handle class imbalance
+4. Logistic Regression model is trained
+5. Predictions are made with probability scores
+6. Results are displayed via an interactive dashboard
 
 ---
 
@@ -84,39 +92,50 @@ streamlit run app.py
 
 ---
 
-## 🌐 Deployment
-
-This app is deployed using Streamlit Community Cloud.
-
-👉 The dataset is fetched from an online source to avoid large file issues during deployment.
-
----
-
 ## 📊 Dataset
 
-- Based on the popular credit card fraud dataset
+- Based on the widely used credit card fraud dataset
 - Contains anonymized features (V1–V28), Time, Amount, and Class
-- Highly imbalanced dataset
+- Highly imbalanced dataset (fraud cases are rare)
+- Loaded dynamically from an online source for deployment
 
 ---
 
-## 🎯 Future Improvements
+## 🎯 Results & Insights
 
-- 🔥 Add XGBoost / LightGBM for better performance
-- 📉 Add ROC curve & confusion matrix visualization
-- 🌐 Connect to real-time transaction APIs
-- 🧠 Implement anomaly detection (Autoencoder / Isolation Forest)
+- Successfully detects fraudulent transactions with high recall
+- Provides probability-based risk classification
+- Feature importance helps interpret model decisions
+
+---
+
+## 🔮 Future Improvements
+
+- 🔥 Add XGBoost / LightGBM for improved performance
+- 📉 Include ROC Curve and Confusion Matrix
+- 🌐 Real-time transaction API integration
+- 🧠 Add anomaly detection (Isolation Forest / Autoencoder)
 
 ---
 
 ## 👩‍💻 Author
 
 **Sadhvi**
-B.Tech CSE (2023–2027)
+B.Tech Computer Science (2023–2027)
 Aspiring Data Scientist
 
 ---
 
-## ⭐ If you like this project
+## ⭐ Support
 
-Give it a ⭐ on GitHub and feel free to fork and improve!
+If you found this project useful:
+
+- ⭐ Star this repository
+- 🍴 Fork it and build upon it
+- 📢 Share it with others
+
+---
+
+## 📌 Note
+
+This project is built for educational and demonstration purposes and simulates real-world fraud detection systems.
